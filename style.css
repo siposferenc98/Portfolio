@@ -1,0 +1,269 @@
+* {
+	
+	font-family: -apple-system,helvetica,arial,sans-serif;
+	
+}
+
+@media screen and (max-width:996px) {
+	* {
+		font-size: 1.2rem;
+	}
+	
+	#nyit {
+		left:1rem !important;
+	}
+
+	#home {
+		right:1rem !important;
+	}
+
+	#linkek li {
+		display:block;
+		float:none;
+		position: relative;
+		width:100%;
+		transform: none;
+		top:0;
+		left:0;
+	}
+
+	.tanulmanyok h1 {
+	
+		text-align: center;
+	}
+
+	input{
+		display:block;
+		float:none;
+		transform: none;
+		width: 100%;
+		position: relative;
+	}
+
+	#gen
+	{
+		margin-top:1rem;
+	}
+
+	
+	
+
+
+}
+
+body {
+	background-color:#292b35;
+
+	
+}
+
+
+
+#nyit {
+	position:absolute;
+	top:2rem;
+	left:3rem;
+	color:white;
+	font-size:50px;
+	cursor:pointer;
+	transition: all 0.2s;
+}
+
+#home {
+	position:absolute;
+	top:2rem;
+	right:3rem;
+	color:white;
+	font-size:50px;
+	text-decoration: none;
+	cursor: pointer;
+	transition: all 0.2s;
+
+}
+
+.navbar {
+	
+	height:100%;
+	width:0;
+	position:fixed;
+	z-index:1;
+	top:0;
+	left:0;
+	background-color:black;
+	padding-top:50px;
+	overflow-x: hidden; 
+	display: block;
+	transition:width 0.5s;
+}
+
+.navbar a {
+  text-align:center;
+  padding:10px 10px 10px 10px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  height:10%;
+  display: block;
+  transition:all 0.2s;
+  
+}
+
+.navbar a:hover {
+	
+	text-shadow:2px 2px black;
+	font-weight:bold;
+	
+	
+}
+
+
+#bezar {
+  position: absolute;
+  top: 0;
+  right: 15px;
+  margin-left: 35px;
+  font-size:50px;
+}
+
+#main {
+	transition:0.5s;
+	
+}
+
+#linkek {
+	
+	display:block;
+	margin:50px;
+	text-align:center;
+	border:1px solid black;
+	border-radius:10px 10px;
+
+}
+
+
+
+
+.container {
+	
+	text-align:center;
+}
+
+
+
+.container a {
+	
+	text-decoration:underline;
+}
+
+.container ul {
+	display:block;
+	margin:50px;
+	text-align:center;
+	border-radius:10px 10px;
+	padding:0;
+	
+}
+
+.container li {
+	
+	display:inline-block;
+	list-style-type:none;
+	padding:25px;
+	
+	
+}
+
+
+#linkek a {
+	color:white;
+}
+
+#linkek li:hover {
+	background-color:rgba(0,0,0,0.7);
+}
+
+#me {
+	top:15px;
+	position:relative;
+	width:200px;
+	border-radius:10%;
+	margin:10px;
+	padding:10px;
+
+}
+
+#leiras h1 {
+	
+	color:white;
+	font-weight:bold;
+}
+
+
+#leiras h2 {
+	
+	color:rgb(104, 155, 222);
+	
+}
+
+.elvalaszto {
+	border-top:2px solid black;
+	padding:20px;
+}
+
+
+.tanulmanyok {
+	text-align:left;
+	padding:10px;
+	background-color:rgba(45,51,79,0.3);
+	border-radius:20px;
+	
+}
+
+.tanulmanyok h1 {
+	
+	color:rgb(104, 155, 222);
+	padding:20px;
+	padding-top:50px;
+}
+
+.tanulmanyok h2, p {
+	
+	color:white;
+	padding-left:50px;
+}
+
+#tanulmanyok {
+	color:rgb(104, 155, 222);
+	padding:20px;
+	
+}
+
+
+
+
+.skills li{
+	color:white;
+	background-color:rgb(104, 155, 222);
+	font-weight:bold;
+	border-radius:4px;
+	text-indent:0;
+	height:auto;
+	padding:15px;
+	margin:3px;
+	
+}
+
+
+/* Overlay */
+
+#overlay {
+	
+	z-index:0;
+	position:absolute;
+	top:0px;
+	width:100%;
+	height:300%;
+	display:none;
+	transition:all 0.5s;
+	
+}
