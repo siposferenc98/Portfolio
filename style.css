@@ -4,6 +4,16 @@
 	
 }
 
+#desc
+{
+	opacity: 0;
+}
+#mainDiv
+{
+	opacity: 0;
+}
+
+
 @media screen and (max-width:996px) {
 	* {
 		font-size: 1.2rem;
@@ -53,8 +63,6 @@
 
 body {
 	background-color:#292b35;
-
-	
 }
 
 
@@ -125,10 +133,7 @@ body {
   font-size:50px;
 }
 
-#main {
-	transition:0.5s;
-	
-}
+
 
 #linkek {
 	
@@ -140,7 +145,11 @@ body {
 
 }
 
-
+#main {
+	
+	transition:0.5s;
+	
+}
 
 
 .container {
@@ -189,7 +198,7 @@ body {
 	border-radius:10%;
 	margin:10px;
 	padding:10px;
-
+	
 }
 
 #leiras h1 {
@@ -204,6 +213,7 @@ body {
 	color:rgb(104, 155, 222);
 	
 }
+
 
 .elvalaszto {
 	border-top:2px solid black;
