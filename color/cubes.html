@@ -35,22 +35,22 @@
             <h1>Color Cubes</h1>
                 <div>
                 <p>
-                    <label for ="sor">Sor:</label>
-                    <input type = "number" id = "sor"> &emsp; 
-                    <label for = "oszlop">Oszlop:</label> 
-                    <input type = "number" id="oszlop"> &emsp; 
-                    <button id ="gen" onclick = Main()>Generáld</button>
+                    <label for ="sor">Rows: </label>
+                    <input type = "number" id = "sor" value="5"> &emsp; 
+                    <label for = "oszlop">Columns:</label> 
+                    <input type = "number" id="oszlop" value="5"> &emsp; 
+                    <button id ="gen" onclick = Main()>Generate</button>
                 </p>
                 </div>
             <form id = "difficulty">
                 <fieldset id = "gombok">
-                    <legend>Nehézség:</legend>
+                    <legend>Difficulty:</legend>
                     <input type= "radio" id = "1" name = "diff" value="1"> 
-                    <label for = "1">Könnyű</label>
+                    <label for = "1">Easy</label>
                     <input type= "radio" id = "2" name = "diff" value="2" checked>
-                    <label for = "2">Közepes</label>
+                    <label for = "2">Medium</label>
                     <input type= "radio" id = "3" name = "diff" value="3"> 
-                    <label for = "3">Nehéz</label>
+                    <label for = "3">Hard</label>
                 </fieldset>
             </form>
                     <div id = "timer"></div>

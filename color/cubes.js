@@ -77,7 +77,7 @@ function Rekurzio(matrix, sor, oszl, a, rand1) {
             console.log(matrix);
         }
         else {
-            window.alert("Rossz szín!");
+            window.alert("Wrong color!");
             elet--;
         }
         
@@ -86,11 +86,11 @@ function Rekurzio(matrix, sor, oszl, a, rand1) {
 
 function GameOver() {
     var eletek = document.getElementById("elet");
-    eletek.innerHTML = "Életek: " + elet;
+    eletek.innerHTML = "Lives: " + elet;
 
     if (elet == 0)
     {
-        window.alert("Vesztettél!");
+        window.alert("You lost!");
         clearInterval(szamolas);
         document.getElementById("gen").style.display="inline-block";
         document.getElementById("difficulty").style.display="block";
@@ -100,7 +100,7 @@ function GameOver() {
 
 function Elet() {
     var eletek = document.getElementById("elet");
-    eletek.innerHTML = "Életek: " + elet; 
+    eletek.innerHTML = "Lives: " + elet; 
     console.log(eletek);
 }
 
@@ -128,7 +128,7 @@ function Difficulty() {
         elet = 3;
     }
     else {
-        window.alert("Nem választottál nehézséget!");
+        window.alert("You didn't choose a difficulty!");
     }
 }
 
@@ -140,19 +140,19 @@ function Timer() {
     var timercont = document.getElementById("timer");
     var timer = document.createElement("p");
     var pont = document.createElement("p");
-    pont.innerHTML = "Pontszám: " + pontszam;
+    pont.innerHTML = "Points: " + pontszam;
     timercont.innerHTML = "";
-    timer.innerHTML = "Idő: " + szamlalo;
+    timer.innerHTML = "Time: " + szamlalo;
     timercont.appendChild(timer);
     timercont.appendChild(pont);  
     szamolas = setInterval(function(){
         szamlalo-=1;
-        timer.innerHTML = "Idő: " + szamlalo;
+        timer.innerHTML = "Time: " + szamlalo;
         console.log(szamlalo);
         if (szamlalo == 0)
                 {
                     clearInterval(szamolas);
-                    window.alert("Vesztettél!");
+                    window.alert("You lost!");
                     document.getElementById("gen").style.display="inline-block";
                     document.getElementById("difficulty").style.display="block";
                     document.getElementById("tablazat").style.pointerEvents = "none";
@@ -174,16 +174,16 @@ function MKatt(rand1) {
     switch (rand1) 
     {
         case 1:
-            szincont.innerHTML="Piros";
+            szincont.innerHTML="Red";
             break;
         case 2:
-            szincont.innerHTML="Zöld";
+            szincont.innerHTML="Green";
             break;
         case 3: 
-            szincont.innerHTML="Kék";
+            szincont.innerHTML="Blue";
             break;
         case 4: 
-            szincont.innerHTML="Sárga";
+            szincont.innerHTML="Yellow";
             break;
     }   
 
@@ -233,7 +233,7 @@ function Main (){
     var oszlop = document.getElementById("oszlop").value;
     if ((sorv <= 0) || (oszlop <=0)) 
     {
-        window.alert("Az érték nem lehet negatív vagy nulla!");
+        window.alert("The values can't be negative or zero!");
     }
     else {
     Difficulty();
